@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <script src="https://kit.fontawesome.com/1c574e415b.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Section d'En-tête -->
+  <header class="bg-blue-600 text-white p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-semibold">YOUNOUSS KOUAKOU</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-gray-300">Accueil</a></li>
+          <li><a href="#projets" class="hover:text-gray-300">Projets</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Héros -->
+  <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('./images/you.jpg');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+      <h2 class="text-white text-4xl sm:text-6xl font-bold text-center">Bonjour, je suis ASSANE KOUAKOU YOUNOUSS.<br>Pationné du web</h2>
+    
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Compétences</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-blue-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">HTML & CSS</h3>
+          <p class="mt-4">Développement de pages web modernes et responsives avec HTML et CSS.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">JavaScript</h3>
+          <p class="mt-4">Création d'interactions dynamiques et d'applications web avec JavaScript.</p>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">React</h3>
+          <p class="mt-4">Développement d'applications React avec un état dynamique et une gestion efficace des composants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Mes Projets</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Projet 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="/images/react.webp" alt="Projet 1" class="w-full h-64 object-cover rounded-lg">
+          <h3 class="text-xl font-semibold mt-4">Projet 1</h3>
+          <p class="mt-2"> Une application dynamique construite avec React.</p>
+        </div>
+        <!-- Projet 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="/images/js.png" alt="Projet 2" class="w-full h-64 object-cover rounded-lg">
+          <h3 class="text-xl font-semibold mt-4">Projet 2</h3>
+          <p class="mt-2"> Un site web responsive développé en HTML, CSS et JavaScript.</p>
+        </div>
+        <!-- Projet 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="/images/vue.js" alt="Projet 3" class="w-full h-64 object-cover rounded-lg">
+          <h3 class="text-xl font-semibold mt-4">Projet 3</h3>
+          <p class="mt-2"> Un portfolio interactif développé avec Vue.js.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire de Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-8">Contactez-moi</h2>
+      <form class="max-w-lg mx-auto space-y-6">
+        <input type="text" name="nom" placeholder="ASSANE" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="email" name="email" placeholder="KOUAKOU YOUNOUSS" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <textarea name="message" placeholder="Votre message" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="4"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition duration-300">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
